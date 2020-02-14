@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importação de Arquivo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <input type="file" onchange="read(this)" />
+        <div id="info" class="info"></div>
+    </div>
+
+    <button id="btnDown" class="btnDown" onclick="download()" disabled>Download</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
