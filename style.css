@@ -2,11 +2,78 @@ html,
 body {
     margin: 0;
     height: 100%;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+}
+
+
+/* Divs */
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.import {
+    border: 1px dashed #ccc;
+    padding: 40px 40px 40px 40px;
+    cursor: pointer;
+}
+
+
+/* Elements */
+
+.iptFile {
+    display: none;
 }
 
 .info {
     background-color: #ffffff;
 }
 
-.btnDown {}
+.btnDown {
+    background-color: wheat;
+}
+
+
+/* Table */
+
+.table {
+    width: 75%;
+    margin-top: 20px;
+}
+
+.table tr th {
+    text-align: left;
+}
+
+.table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table th,
+td {
+    padding: 15px;
+    text-align: left;
+}

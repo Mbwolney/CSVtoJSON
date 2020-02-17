@@ -10,12 +10,27 @@
 </head>
 
 <body>
-    <div id="root">
-        <input type="file" onchange="read(this)" />
-        <div id="info" class="info"></div>
-    </div>
+    <div class="container" ondrop="onDrop(event)">
+        <div class="left">
+            <div id="drop" class="import" onclick="selecionarArquivo()">
+                <input class="iptFile" id="iptFile" type="file" onchange="read(this)" />
+                <span>Arraste o arquivo ou click para selecionar</span>
+            </div>
+        </div>
 
-    <button id="btnDown" class="btnDown" onclick="download()" disabled>Download</button>
+        <div class="right">
+            <table id="table" class="table">
+                <tr>
+                    <th>N</th>
+                    <th>Nome</th>
+                    <th>Data Nascimento</th>
+                    <th>CPF</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <button id="btnDown" class="btnDown" onclick="download()" disabled>Download</button> -->
+    </div>
 
     <script src="index.js"></script>
 </body>
