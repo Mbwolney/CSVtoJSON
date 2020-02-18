@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="container" ondrop="onDrop(event)">
+    <div class="container">
         <div class="left">
-            <div id="drop" class="import" onclick="selecionarArquivo()">
+            <div class="import" onclick="selecionarArquivo()" ondrop="dropevent(event)" ondragover="return false">
                 <input class="iptFile" id="iptFile" type="file" onchange="read(this)" />
                 <span>Arraste o arquivo ou click para selecionar</span>
             </div>

@@ -56,9 +56,14 @@ function selecionarArquivo() {
     document.getElementById("iptFile").click();
 }
 
-function onDrop(evt) {
-    debugger
-    const data = event.dataTransfer.getData("text/csv");
-    event.target.textContent = data;
-    event.preventDefault();
+// function onDrop(evt) {
+//     const data = event.dataTransfer.getData("text/csv");
+//     event.target.textContent = data;
+//     event.preventDefault();
+// }
+
+function dropevent(ev) {
+    ev.preventDefault();
+    let dados = event.dataTransfer.files[0];
+    reader.readAsText(dados);
 }
